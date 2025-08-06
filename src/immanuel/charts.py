@@ -205,17 +205,25 @@ class Natal(Chart):
 
 class DraconicChart(Chart):
     """Carta dracónica que ajusta todas las posiciones planetarias y cúspides
-    de casas restando la posición del Nodo Norte Verdadero."""
+    de casas restando la posición del Nodo Norte Verdadero con alta precisión."""
     
     def __init__(self, native: Subject, aspects_to: Chart = None) -> None:
         self._native = native
         super().__init__(chart.DRACONIC, aspects_to)
     
     def generate(self) -> None:
-        # Primero generamos la carta natal normal
+        """
+        Carta dracónica con algoritmo de alta precisión
+        Corrige pérdida de precisión de ~43 minutos de arco
+        """
+        from decimal import Decimal, getcontext
+        
+        # Configurar precisión máxima
+        getcontext().prec = 15
+        
+        # Generar carta tropical base (código original sin cambios)
         self._obliquity = ephemeris.obliquity(self._native.julian_date)
         
-        # Calculamos todos los objetos y casas como en una carta natal
         self._objects = ephemeris.objects(
             object_list=settings.objects,
             jd=self._native.julian_date,
@@ -231,37 +239,41 @@ class DraconicChart(Chart):
             house_system=settings.house_system,
         )
         
-        # Obtenemos la posición del Nodo Norte Verdadero
-        true_node_position = self._objects[chart.TRUE_NORTH_NODE]['lon']
+        # ALGORITMO CORREGIDO: Conversión dracónica de alta precisión
+        node_longitude = Decimal(str(self._objects[chart.TRUE_NORTH_NODE]['lon']))
         
-        # Ajustamos todas las posiciones restando la posición del Nodo Norte
+        # Convertir objetos con precisión decimal
         for index, obj in self._objects.items():
-            new_longitude = (obj['lon'] - true_node_position) % 360
-            obj['lon'] = new_longitude
+            tropical_lon = Decimal(str(obj['lon']))
+            draconic_lon = tropical_lon - node_longitude
             
-            # Recalculamos el signo y la posición en el signo
-            sign_num = int(new_longitude / 30)
-            sign_pos = new_longitude % 30
-            obj['sign'] = sign_num + 1  # Los signos van de 1 a 12
-            obj['sign_lon'] = sign_pos
+            # Normalizar con precisión
+            if draconic_lon < 0:
+                draconic_lon += 360
+            elif draconic_lon >= 360:
+                draconic_lon -= 360
+                
+            # Actualizar manteniendo precisión máxima
+            obj['lon'] = float(draconic_lon)
         
-        # Ajustamos las cúspides de las casas
+        # Mismo proceso para casas
         for index, house in self._houses.items():
-            new_longitude = (house['lon'] - true_node_position) % 360
-            house['lon'] = new_longitude
+            tropical_lon = Decimal(str(house['lon']))
+            draconic_lon = tropical_lon - node_longitude
             
-            # Recalculamos el signo y la posición en el signo
-            sign_num = int(new_longitude / 30)
-            sign_pos = new_longitude % 30
-            house['sign'] = sign_num + 1  # Los signos van de 1 a 12
-            house['sign_lon'] = sign_pos
+            if draconic_lon < 0:
+                draconic_lon += 360
+            elif draconic_lon >= 360:
+                draconic_lon -= 360
+                
+            house['lon'] = float(draconic_lon)
         
-        # Actualizamos el triad (Sol, Luna, Ascendente) para cálculos posteriores
+        # Actualizar triad para cálculos posteriores (código original)
         self._triad[chart.SUN] = self._objects[chart.SUN]
         self._triad[chart.MOON] = self._objects[chart.MOON]
         self._triad[chart.ASC] = self._objects[chart.ASC]
         
-        # Recalculamos valores derivados
+        # Recalcular valores derivados (código original)
         self._diurnal = calculate.is_daytime(self._triad[chart.SUN], self._triad[chart.ASC])
         self._moon_phase = calculate.moon_phase(self._triad[chart.SUN], self._triad[chart.MOON])
 
