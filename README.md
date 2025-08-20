@@ -123,6 +123,64 @@ Content-Type: application/json
 }
 ```
 
+### **✨ NUEVO: Análisis Cruzado Dracónico-Tropical**
+```http
+POST /carta-natal/cruzada
+Content-Type: application/json
+
+{
+  "nombre": "Luis Minvielle",
+  "fecha_nacimiento": "1964-12-26",
+  "hora_nacimiento": "21:12",
+  "ciudad_nacimiento": "Buenos Aires",
+  "pais_nacimiento": "Argentina"
+}
+```
+
+**Respuesta del Análisis Cruzado:**
+```json
+{
+  "success": true,
+  "data": {
+    "tipo_analisis": "cruzado_draconico_tropical",
+    "carta_tropical": { /* carta tropical completa */ },
+    "carta_draconica": { /* carta dracónica completa */ },
+    "cuspides_cruzadas": [
+      {
+        "casa_draconica": 1,
+        "signo_draconica": "Aries",
+        "grados_draconica": "29°28'",
+        "casa_tropical_ubicacion": 9,
+        "distancia_desde_cuspide": {
+          "grados": 17,
+          "minutos": 19,
+          "direccion": "después"
+        },
+        "descripcion": "Casa 1 Dracónica (Aries 29°28') cae en Casa 9 Tropical"
+      }
+      // ... 11 cúspides más
+    ],
+    "aspectos_cruzados": [
+      {
+        "punto_draconico": "Venus",
+        "punto_tropical": "Pluto",
+        "tipo_aspecto": "Conjunción",
+        "orbe_decimal": 0.34,
+        "exacto": true,
+        "descripcion": "Venus Dracónico conjunción Pluto Tropical - Orbe: 0°20'"
+      }
+      // ... más aspectos
+    ],
+    "metadata": {
+      "total_cuspides": 12,
+      "total_aspectos": 18,
+      "orbe_conjuncion": 8.0,
+      "orbe_oposicion": 8.0
+    }
+  }
+}
+```
+
 ### **Respuesta Típica**
 ```json
 {
