@@ -152,7 +152,9 @@ def calcular_carta_natal(datos_usuario: dict, draconica=False) -> dict:
         
         # Calcular carta natal o dracónica según corresponda
         if draconica:
+            print("🚨 MAIN.PY: Creando DraconicChart...")
             chart_obj = charts.DraconicChart(native)
+            print("🚨 MAIN.PY: DraconicChart creado exitosamente")
         else:
             chart_obj = charts.Natal(native)
             
