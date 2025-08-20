@@ -67,3 +67,28 @@ class ErrorResponse(BaseModel):
     error: str
     detail: Optional[str] = None
     timestamp: datetime = Field(default_factory=datetime.now)
+
+# Modelos internos para tipado de análisis cruzados (no para API)
+class CuspideCruzada(BaseModel):
+    """Modelo interno para cúspides cruzadas"""
+    casa_draconica: int
+    signo_draconica: str
+    grados_draconica: str
+    casa_tropical_ubicacion: int
+    distancia_desde_cuspide: Dict[str, Any]
+    descripcion: str
+
+class AspectoCruzado(BaseModel):
+    """Modelo interno para aspectos cruzados"""
+    punto_draconico: str
+    signo_draconico: str
+    grados_draconico: str
+    punto_tropical: str
+    signo_tropical: str
+    grados_tropical: str
+    tipo_aspecto: str
+    orbe_grados: int
+    orbe_minutos: int
+    orbe_decimal: float
+    exacto: bool
+    descripcion: str

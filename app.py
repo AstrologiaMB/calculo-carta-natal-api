@@ -23,6 +23,9 @@ except ImportError as e:
 from models import UserDataRequest, CartaNatalResponse, HealthResponse, ErrorResponse
 from config import settings
 
+# Importar calculadora de análisis cruzados
+from src.calculators.cross_chart_calculator import calcular_cuspides_cruzadas, calcular_aspectos_cruzados
+
 # Configurar logging
 logging.basicConfig(
     level=settings.log_level,
@@ -106,7 +109,8 @@ async def root():
             "health": "/health",
             "docs": "/docs",
             "carta_tropical": "/carta-natal/tropical",
-            "carta_draconica": "/carta-natal/draconica"
+            "carta_draconica": "/carta-natal/draconica",
+            "carta_cruzada": "/carta-natal/cruzada"
         },
         "description": settings.description
     }
@@ -196,6 +200,63 @@ async def calcular_carta_draconica(request: UserDataRequest):
         raise HTTPException(
             status_code=500, 
             detail=f"Error calculando carta dracónica: {str(e)}"
+        )
+
+@app.post("/carta-natal/cruzada", response_model=CartaNatalResponse)
+async def calcular_carta_cruzada(request: UserDataRequest):
+    """Calcular análisis cruzado dracónico-tropical"""
+    logger.info(f"Calculando análisis cruzado para: {request.nombre}")
+    
+    try:
+        # Preparar datos para main.py
+        datos_usuario = await preparar_datos_usuario(request)
+        logger.debug(f"Datos preparados: {datos_usuario}")
+        
+        # Calcular ambas cartas
+        logger.info("Calculando carta tropical...")
+        carta_tropical = calcular_carta_natal(datos_usuario, draconica=False)
+        
+        logger.info("Calculando carta dracónica...")
+        carta_draconica = calcular_carta_natal(datos_usuario, draconica=True)
+        
+        # Calcular análisis cruzados
+        logger.info("Calculando cúspides cruzadas...")
+        cuspides_cruzadas = calcular_cuspides_cruzadas(carta_tropical, carta_draconica)
+        
+        logger.info("Calculando aspectos cruzados...")
+        aspectos_cruzados = calcular_aspectos_cruzados(carta_tropical, carta_draconica)
+        
+        logger.info(f"Análisis completado: {len(cuspides_cruzadas)} cúspides, {len(aspectos_cruzados)} aspectos")
+        
+        # Estructurar respuesta usando CartaNatalResponse existente
+        return CartaNatalResponse(
+            success=True,
+            data={
+                "tipo_analisis": "cruzado_draconico_tropical",
+                "carta_tropical": carta_tropical,
+                "carta_draconica": carta_draconica,
+                "cuspides_cruzadas": cuspides_cruzadas,
+                "aspectos_cruzados": aspectos_cruzados,
+                "metadata": {
+                    "total_cuspides": len(cuspides_cruzadas),
+                    "total_aspectos": len(aspectos_cruzados),
+                    "orbe_conjuncion": 8.0,
+                    "orbe_oposicion": 8.0,
+                    "puntos_analizados": [
+                        'Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 
+                        'Uranus', 'Neptune', 'Pluto', 'True North Node', 'Chiron'
+                    ]
+                }
+            },
+            data_reducido=None  # No aplica para análisis cruzado
+        )
+        
+    except Exception as e:
+        logger.error(f"Error en análisis cruzado: {e}")
+        logger.error(traceback.format_exc())
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Error calculando análisis cruzado: {str(e)}"
         )
 
 async def preparar_datos_usuario(request: UserDataRequest) -> Dict[str, Any]:
