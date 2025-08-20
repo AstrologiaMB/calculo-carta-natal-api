@@ -76,12 +76,13 @@ async def log_requests(request: Request, call_next):
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
     logger.error(f"Validation error: {exc}")
+    error_response = ErrorResponse(
+        error="Datos de entrada inválidos",
+        detail=str(exc)
+    )
     return JSONResponse(
         status_code=422,
-        content=ErrorResponse(
-            error="Datos de entrada inválidos",
-            detail=str(exc)
-        ).model_dump()
+        content=error_response.model_dump()
     )
 
 # Manejador de errores generales
@@ -89,12 +90,13 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 async def general_exception_handler(request: Request, exc: Exception):
     logger.error(f"Unexpected error: {exc}")
     logger.error(traceback.format_exc())
+    error_response = ErrorResponse(
+        error="Error interno del servidor",
+        detail=str(exc) if settings.log_level == "DEBUG" else None
+    )
     return JSONResponse(
         status_code=500,
-        content=ErrorResponse(
-            error="Error interno del servidor",
-            detail=str(exc) if settings.log_level == "DEBUG" else None
-        ).model_dump()
+        content=error_response.model_dump()
     )
 
 @app.get("/", response_model=Dict[str, Any])
