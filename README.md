@@ -56,6 +56,9 @@ calculo-carta-natal-api/
 
 ## 🚀 Inicio Rápido
 
+### 📹 **Video de Instrucciones**
+Para ver un tutorial completo paso a paso, revisa nuestro video de instrucciones: **[Instructions.mp4](./Instructions.mp4)**
+
 ### 1. **Instalación**
 ```bash
 # Clonar el repositorio
