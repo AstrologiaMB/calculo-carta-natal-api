@@ -2,46 +2,46 @@
 coincidencia entre la carta tropica y draconica
 el sol draconico en los signos
 que es el sol draconico
-sol draconico en aries
-sol draconico en tauro
-sol draconico en geminis
-sol draconico en cancer
-sol draconico en leo
-sol draconico en virgo
-sol draconico en libra
-sol draconico en escorpio
-sol draconico en sagitario
-sol draconico en capricornio
-sol draconico en acuario
-sol draconico en piscis
+sol dracónico en aries
+sol dracónico en tauro
+sol dracónico en géminis
+sol dracónico en cáncer
+sol dracónico en leo
+sol dracónico en virgo
+sol dracónico en libra
+sol dracónico en escorpio
+sol dracónico en sagitario
+sol dracónico en capricornio
+sol dracónico en acuario
+sol dracónico en piscis
 la luna draconica en los signos
 que es la luna draconica
-luna draconica en aries
-luna draconica en tauro
-luna draconica en geminis
-luna draconica en cancer
-luna draconica en leo
-luna draconica en virgo
-luna draconica en libra
-luna draconica en escorpio
-luna draconica en sagitario
-luna draconica en capricornio
-luna draconica en acuario
-luna draconica en piscis
+luna dracónica en aries
+luna dracónica en tauro
+luna dracónica en géminis
+luna dracónica en cáncer
+luna dracónica en leo
+luna dracónica en virgo
+luna dracónica en libra
+luna dracónica en escorpio
+luna dracónica en sagitario
+luna dracónica en capricornio
+luna dracónica en acuario
+luna dracónica en piscis
 el ascendente draconico en los signos
 ¿que es el ascendente draconico?
-ascendente draconico en aries
-ascendente draconico en tauro
-ascendente draconico en geminis
-ascendente draconico en cancer
-ascendente draconico en leo
-ascendente draconico en virgo
-ascendente draconico en libra
-ascendente draconico en escorpio
-ascendente draconico en sagitario
-ascendente draconico en capricornio
-ascendente draconico en acuario
-ascendente draconico en piscis
+ascendente dracónico en aries
+ascendente dracónico en tauro
+ascendente dracónico en géminis
+ascendente dracónico en cáncer
+ascendente dracónico en leo
+ascendente dracónico en virgo
+ascendente dracónico en libra
+ascendente dracónico en escorpio
+ascendente dracónico en sagitario
+ascendente dracónico en capricornio
+ascendente dracónico en acuario
+ascendente dracónico en piscis
 superposicion de casas draconicas con casas tropicas
 significado de la casa 1 draconica
 significado de la casa 2 draconica
@@ -212,10 +212,10 @@ la cuspide de la casa 12 draconica superpuesta a la casa 10 tropica
 la cuspide de la casa 12 draconica superpuesta a la casa 11 tropica
 la cuspide de la casa 12 draconica superpuesta a la casa 12 tropica
 contactos entre planetas draconicos y tropicos
-conjuncion de sol draconico con el sol tropico
-oposicion de sol draconico con el sol tropico
-conjuncion de luna draconica con el sol tropico
-oposicion de luna draconica con el sol tropico
+conjuncion del sol draconico con el sol tropico
+oposicion del sol draconico con el sol tropico
+conjuncion de la luna draconica con el sol tropico
+oposicion de la luna draconica con el sol tropico
 conjuncion de mercurio draconico con el sol tropico
 oposicion de mercurio draconico con el sol tropico
 conjuncion de venus draconico con el sol tropico
@@ -234,78 +234,13 @@ conjuncion de pluton draconico con el sol tropico
 oposicion de pluton draconico con el sol tropico
 conjuncion de quiron draconico con el sol tropico
 oposicion de quiron draconico con el sol tropico
-conjuncion de luna draconica con la luna tropica
-oposicion de luna draconica con la luna tropica
-conjuncion de sol draconico con la luna tropica
-oposicion de sol draconico con la luna tropica
-conjuncion de mercurio draconico con la luna tropica
-oposicion de mercurio draconico con la luna tropica
-conjuncion de venus draconico con la luna tropica
-oposicion de venus draconico con la luna tropica
-conjuncion de marte draconico con la luna tropica
-oposicion de marte draconico con la luna tropica
-conjuncion de jupiter draconico con la luna tropica
-oposicion de jupiter draconico con la luna tropica
-conjuncion de saturno draconico con la luna tropica
-oposicion de saturno draconico con la luna tropica
-conjuncion de urano draconico con la luna tropica
-oposicion de urano draconico con la luna tropica
-conjuncion de neptuno draconico con la luna tropica
-oposicion de neptuno draconico con la luna tropica
-conjuncion de pluton draconico con la luna tropica
-oposicion de pluton draconico con la luna tropica
-conjuncion de quiron draconico con la luna tropica
-oposicion de quiron draconico con la luna tropica
-conjuncion de mercurio draconico con mercurio tropico
-oposicion de mercurio draconico con mercurio tropico
-conjuncion de sol draconico con mercurio tropico
-oposicion de sol draconico con mercurio tropico
-conjuncion de luna draconica con mercurio tropico
-oposicion de luna draconica con mercurio tropico
-conjuncion de venus draconico con mercurio tropico
-oposicion de venus draconico con mercurio tropico
-conjuncion de marte draconico con mercurio tropico
-oposicion de marte draconico con mercurio tropico
-conjuncion de jupiter draconico con mercurio tropico
-oposicion de jupiter draconico con mercurio tropico
-conjuncion de saturno draconico con mercurio tropico
-oposicion de saturno draconico con mercurio tropico
-conjuncion de urano draconico con mercurio tropico
-oposicion de urano draconico con mercurio tropico
-conjuncion de neptuno draconico con mercurio tropico
-oposicion de neptuno draconico con mercurio tropico
-conjuncion de pluton draconico con mercurio tropico
-oposicion de pluton draconico con mercurio tropico
-conjuncion de quiron draconico con mercurio tropico
-oposicion de quiron draconico con mercurio tropico
-conjuncion del venus draconico con venus tropico
-oposicion del venus draconico con venus tropico
-conjuncion de sol draconico con venus tropico
-oposicion de sol draconico con venus tropico
-conjuncion de luna draconica con venus tropico
-oposicion de luna draconica con venus tropico
-conjuncion de mercurio draconico con venus tropico
-oposicion de mercurio draconico con venus tropico
-conjuncion de marte draconico con venus tropico
-oposicion de marte draconico con venus tropico
-conjuncion de jupiter draconico con venus tropico
-oposicion de jupiter draconico con venus tropico
-conjuncion de saturno draconico con venus tropico
-oposicion de saturno draconico con venus tropico
-conjuncion de urano draconico con venus tropico
-oposicion de urano draconico con venus tropico
-conjuncion de neptuno draconico con venus tropico
-oposicion de neptuno draconico con venus tropico
-conjuncion de pluton draconico con venus tropico
-oposicion de pluton draconico con venus tropico
-conjuncion de quiron draconico con venus tropico
-oposicion de quiron draconico con venus tropico
+conjuncion de la luna draconica con la luna tropica
 conjuncion del marte draconico con marte tropico
 oposicion del marte draconico con marte tropico
-conjuncion de sol draconico con marte tropico
-oposicion de sol draconico con marte tropico
-conjuncion de luna draconica con marte tropico
-oposicion de luna draconica con marte tropico
+conjuncion del sol draconico con marte tropico
+oposicion del sol draconico con marte tropico
+conjuncion de la luna draconica con marte tropico
+oposicion de la luna draconica con marte tropico
 conjuncion de mercurio draconico con marte tropico
 oposicion de mercurio draconico con marte tropico
 conjuncion de venus draconico con marte tropico
@@ -324,10 +259,10 @@ conjuncion de quiron draconico con marte tropico
 oposicion de quiron draconico con marte tropico
 conjuncion de jupiter draconico con jupiter tropico
 oposicion de jupiter draconico con jupiter tropico
-conjuncion de sol draconico con jupiter tropico
-oposicion de sol draconico con jupiter tropico
-conjuncion de luna draconica con jupiter tropico
-oposicion de luna draconica con jupiter tropico
+conjuncion del sol draconico con jupiter tropico
+oposicion del sol draconico con jupiter tropico
+conjuncion de la luna draconica con jupiter tropico
+oposicion de la luna draconica con jupiter tropico
 conjuncion de mercurio draconico con jupiter tropico
 oposicion de mercurio draconico con jupiter tropico
 conjuncion de venus draconico con jupiter tropico
@@ -346,10 +281,10 @@ conjuncion de quiron draconico con jupiter tropico
 oposicion de quiron draconico con jupiter tropico
 conjuncion de saturno draconico con saturno tropico
 oposicion del saturno draconico con saturno tropico
-conjuncion de sol draconico con saturno tropico
-oposicion de sol draconico con saturno tropico
-conjuncion de luna draconica con saturno tropico
-oposicion de luna draconica con saturno tropico
+conjuncion del sol draconico con saturno tropico
+oposicion del sol draconico con saturno tropico
+conjuncion de la luna draconica con saturno tropico
+oposicion de la luna draconica con saturno tropico
 conjuncion de mercurio draconico con saturno tropico
 oposicion de mercurio draconico con saturno tropico
 conjuncion de venus draconico con saturno tropico
@@ -368,10 +303,10 @@ conjuncion de quiron draconico con saturno tropico
 oposicion de quiron draconico con saturno tropico
 conjuncion de urano draconico con urano tropico
 oposicion del urano draconico con urano tropico
-conjuncion de sol draconico con urano tropico
-oposicion de sol draconico con urano tropico
-conjuncion de luna draconica con urano tropico
-oposicion de luna draconica con urano tropico
+conjuncion del sol draconico con urano tropico
+oposicion del sol draconico con urano tropico
+conjuncion de la luna draconica con urano tropico
+oposicion de la luna draconica con urano tropico
 conjuncion de mercurio draconico con urano tropico
 oposicion de mercurio draconico con urano tropico
 conjuncion de venus draconico con urano tropico
@@ -390,10 +325,10 @@ conjuncion de quiron draconico con urano tropico
 oposicion de quiron draconico con urano tropico
 conjuncion de neptuno draconico con neptuno tropico
 oposicion de neptuno draconico con neptuno tropico
-conjuncion de sol draconico con neptuno tropico
-oposicion de sol draconico con neptuno tropico
-conjuncion de luna draconico con neptuno tropico
-oposicion de luna draconica con neptuno tropico
+conjuncion del sol draconico con neptuno tropico
+oposicion del sol draconico con neptuno tropico
+conjuncion de la luna draconica con neptuno tropico
+oposicion de la luna draconica con neptuno tropico
 conjuncion de mercurio draconico con neptuno tropico
 oposicion de mercurio draconico con neptuno tropico
 conjuncion de venus draconico con neptuno tropico
@@ -410,12 +345,10 @@ conjuncion de pluton draconico con neptuno tropico
 oposicion de pluton draconico con neptuno tropico
 conjuncion de quiron draconico con neptuno tropico
 oposicion de quiron draconico con neptuno tropico
-conjuncion de pluton draconico con pluton tropico
-oposicion de pluton draconico con pluton tropico
-conjuncion de sol draconico con pluton tropico
-oposicion de sol draconico con pluton tropico
-conjuncion de luna draconica con pluton tropico
-oposicion de luna draconica con pluton tropico
+conjuncion del sol draconico con pluton tropico
+oposicion del sol draconico con pluton tropico
+conjuncion de la luna draconica con pluton tropico
+oposicion de la luna draconica con pluton tropico
 conjuncion de mercurio draconico con pluton tropico
 oposicion de mercurio draconico con pluton tropico
 conjuncion de venus draconico con pluton tropico
@@ -432,25 +365,3 @@ conjuncion de neptuno draconico con pluton tropico
 oposicion de neptuno draconico con pluton tropico
 conjuncion de quiron draconico con pluton tropico
 oposicion de quiron draconico con pluton tropico
-conjuncion de quiron draconico con quiron tropico
-oposicion de quiron draconico con quiron tropico
-conjuncion de sol draconico con quiron tropico
-oposicion de sol draconico con quiron tropico
-conjuncion de luna draconica con quiron tropico
-oposicion de luna draconica con quiron tropico
-conjuncion de mercurio draconico con quiron tropico
-oposicion de mercurio draconico con quiron tropico
-conjuncion de venus draconico con quiron tropico
-oposicion de venus draconico con quiron tropico
-conjuncion de marte draconico con quiron tropico
-oposicion de marte draconico con quiron tropico
-conjuncion de jupiter draconico con quiron tropico
-oposicion de jupiter draconico con quiron tropico
-conjuncion de saturno draconico con quiron tropico
-oposicion de saturno draconico con quiron tropico
-conjuncion de urano draconico con quiron tropico
-oposicion de urano draconico con quiron tropico
-conjuncion de neptuno draconico con quiron tropico
-oposicion de neptuno draconico con quiron tropico
-conjuncion de pluton draconico con quiron tropico
-oposicion de pluton draconico con quiron tropico
