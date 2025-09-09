@@ -4,12 +4,15 @@
 
 ✅ **RAG SEPARATION COMPLETADO** - Implementación exitosa de RAGs separados para resolver contaminación cruzada entre interpretaciones tropicales y dracónicas.
 
+✅ **FIX DE GÉNERO DRACÓNICO COMPLETADO** - Problema de interpretaciones dracónicas resuelto completamente.
+
 **Estado Actual:**
 - ✅ Feature flag `USE_SEPARATE_ENGINES = True` activado
 - ✅ Tres índices RAG funcionando: TROPICAL (22 docs), DRACÓNICO (7 docs), MIXTO (29 docs backup)
 - ✅ Contaminación cruzada eliminada: consultas tropicales → contenido tropical puro, consultas dracónicas → contenido dracónico puro
 - ✅ Zero downtime durante implementación
 - ✅ Sistema con fallback automático a índice mixto en caso de error
+- ✅ **NUEVO:** Fix de género dracónico - Luna vs Mercurio resuelto
 
 **Microservicio FastAPI para cálculo de cartas natales con análisis cruzado dracónico-tropical también completado exitosamente.**
 

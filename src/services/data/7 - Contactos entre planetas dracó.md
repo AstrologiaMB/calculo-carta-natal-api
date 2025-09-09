@@ -2,7 +2,7 @@
 
 El nivel dracónico revela aspectos más profundos o evolutivos de cómo experimentamos la energía del planeta, mientras que el nivel trópico muestra la expresión más consciente y cotidiana del planeta.
 
-## Conjunción de Sol dracónico con el Sol trópico
+## Conjunción de Sol dracónico con Sol trópico
 
 El Nodo Norte en la carta trópica esté cerca del grado 0⁰ de Aries, por lo que las cartas trópica y dracónica son prácticamente iguales.
 
@@ -12,7 +12,7 @@ Cuando ambas luminarias se encuentran en conjunción, tu identidad esencial y tu
 
 Esta alineación te otorga una autenticidad poco común, donde no existe conflicto entre quién eres en lo más profundo y cómo te manifiestas en el mundo. Tu personalidad consciente es un vehículo directo para la expresión de tu sentido de identidad profundo.
 
-## Oposición de Sol dracónico con el Sol trópico
+## Oposición de Sol dracónico con Sol trópico
 
 El Nodo Norte en la carta trópica está cerca del grado 180⁰ de Libra, por lo que las cartas trópica y dracónica se oponen.
 
@@ -24,7 +24,7 @@ Esta polarización genera un conflicto fundamental donde constantemente sientes 
 
 El desafío está en encontrar un punto medio creativo donde puedas honrar tanto tu esencia profunda como tu expresión consciente, desarrollando formas de integrar estas polaridades aparentemente opuestas en una síntesis más elevada.
 
-## Conjunción de Luna dracónica con el sol trópico
+## Conjunción de Luna dracónica con Sol trópico
 
 Tu identidad consciente funciona como un canal para profundas fuerzas lunares ancestrales. Tu sol representa cómo te expresas naturalmente en el mundo cotidiano, buscando vitalidad y reconocimiento auténtico. Pero constantemente recibe impulsos de la Luna dracónica desde lo más profundo de tu ser, inyectando sabiduría emocional ancestral y memorias del alma en tu personalidad.
 
@@ -32,7 +32,7 @@ Esta combinación transforma tu manera de ser, dotándote de una autoridad emoci
 
 Existe una sincronización natural entre tus ciclos emocionales internos y las oportunidades externas. Para funcionar armoniosamente, necesitas respetar tus ritmos emocionales naturales y no forzar tu expresión personal cuando los ciclos internos requieren introspección.
 
-## Oposición de Luna dracónica con el sol trópico
+## Oposición de Luna dracónica con Sol trópico
 
 Vives una tensión constante entre tu identidad racional y fuerzas lunares ancestrales que la desafían. Tu sol busca expresarse de manera clara y estructurada, pero se enfrenta continuamente con impulsos emocionales primordiales que chocan contra tu naturaleza expresiva original.
 
@@ -40,7 +40,7 @@ Esta fricción te genera una lucha interna permanente: por un lado, tu deseo nat
 
 Tu personalidad se polariza entre racionalidad solar e intuición lunar, creando dificultad para integrar ambas energías. La clave está en encontrar formas de expresar tu identidad racional sin negar las corrientes lunares, pero tampoco permitiendo que eclipsen tu derecho a brillar de manera estructurada en el mundo presente.
 
-## Conjunción de Mercurio dracónico con el sol trópico
+## Conjunción de Mercurio dracónico con Sol trópico
 
 Tu identidad actúa como puente entre el conocimiento ancestral y la comunicación práctica contemporánea. Mientras tu sol busca reconocimiento social tangible, Mercurio dracónico aporta códigos de comunicación del alma y formas de inteligencia que trascienden el aprendizaje lineal.
 
@@ -48,7 +48,7 @@ Desarrollas naturalmente un liderazgo intelectual que combina profundidad espiri
 
 Tus palabras tienen un poder inusual para despertar percepciones en otros, no solo por su contenido sino por la energía ancestral que las acompaña. Esta combinación puede manifestarse a través de escritura inspirada, la enseñanza transformadora o el liderazgo intelectual que influye significativamente en el pensamiento colectivo.
 
-## Oposición de Mercurio dracónico con el sol trópico
+## Oposición de Mercurio dracónico con Sol trópico
 
 Experimentas un conflicto persistente relativo al conocimiento profundo que surge de tu inconsciente y busca manifestarse en tu vida a través de tu identidad consciente. Tu sol desea expresarse de manera comprensible según códigos sociales actuales, pero se enfrenta con impulsos de sabiduría ancestral y lenguajes simbólicos que desafían la lógica convencional.
 
@@ -56,7 +56,7 @@ Esta tensión te coloca entre dos mundos: tu necesidad de definir una identidad 
 
 La integración requiere encontrar maneras de expresar tu identidad solar que abarquen tu capacidad de transmitir el conocimiento primordial de forma accesible.
 
-## Conjunción de Venus dracónico con el sol trópico
+## Conjunción de Venus dracónico con Sol trópico
 
 Tu personalidad se enriquece con corrientes subjetivas de belleza, armonía y magnetismo relacional. Tu identidad consciente es una canal de expresión para Venus dracónico, que le  aporta, desde las profundidades de lo inconsciente, gran encanto natural, buen gusto innato y aversión por lo grosero, transformándote en alguien cálido y de buen carácter.
 
@@ -64,7 +64,7 @@ Posees una capacidad innata para traer armonía donde hay conflictos. Tu necesid
 
 Tu expresión personal sirve como vehículo para fuerzas de belleza y conexión inconscientes que buscan manifestarse en el mundo presente, creando una personalidad seductora que ejerce atracción natural sobre los demás.
 
-## Oposición de Venus dracónico con el sol trópico
+## Oposición de Venus dracónico con Sol trópico
 
 Vives un conflicto entre la autenticidad directa y la búsqueda de aprobación armoniosa. Tu sol desea brillar genuinamente, pero se enfrenta con impulsos venusinos inconscientes que te empujan hacia la complacencia y búsqueda de belleza a toda costa.
 
@@ -72,7 +72,7 @@ Esta tensión interna te hace oscilar entre tu impulso natural hacia la autentic
 
 La integración requiere honrar tanto tu identidad solar auténtica como las fuerzas venusinas opuestas, encontrando formas de expresarte de modo genuino que abarquen tu necesidad ancestral de belleza y conexión armoniosa.
 
-## Conjunción de Marte dracónico con el sol trópico
+## Conjunción de Marte dracónico con Sol trópico
 
 Tu sentido del ser se potencia con una energía guerrera inconsciente que la transforma completamente. Marte dracónico aporta, desde la subjetividad, intensidad combativa, convirtiéndote en una persona enérgica, audaz y de gran fuerza de voluntad.
 
@@ -80,7 +80,7 @@ Eres alguien de gran iniciativa y ánimo de lucha, una de esas personas que hace
 
 Esta energía marciana subjetiva requiere espacios donde puedas competir, liderar y tomar decisiones, transformando tu expresión natural en algo directo y conquistador que necesita canales constructivos para manifestarse armoniosamente.
 
-## Oposición de Marte dracónico con el sol trópico
+## Oposición de Marte dracónico con Sol trópico
 
 Enfrentas una batalla constante entre la creatividad y fuerzas combativas ancestrales. Tu identidad consciente se ve desafiada por impulsos guerreros que te empujan hacia la confrontación y la competencia.
 
@@ -88,7 +88,7 @@ Tu franqueza y eventual brusquedad emergen del conflicto entre tu naturaleza exp
 
 El desafío está en encontrar formas de honrar tu identidad solar creativa sin rechazar las fuerzas marcianas, buscando espacios de competencia y liderazgo que no traicionen tu esencia genuina, transformando la tensión entre opuestos en fuerza creativa constructiva.
 
-## Conjunción de Júpiter dracónico con el sol trópico
+## Conjunción de Júpiter dracónico con Sol trópico
 
 Tu identidad se expande con una fe extraordinaria en la vida y sus oportunidades que pulsa en tu interior. Júpiter dracónico inyecta de modo inconsciente, optimismo, búsqueda de significado y deseo de evolución en tu expresión natural, dotándote de un temperamento jovial, expansivo y franco.
 
@@ -96,7 +96,7 @@ Tu capacidad para inspirar confianza, convertir sueños en realidad y gozar la v
 
 Esta combinación busca manifestarse en áreas como deportes, política, filosofía o religión, donde tu expresión personal puede servir como vehículo para fuerzas de expansión y sabiduría que trascienden lo cotidiano.
 
-## Oposición de Júpiter dracónico con el sol trópico
+## Oposición de Júpiter dracónico con Sol trópico
 
 Luchas entre la autenticidad equilibrada y un deseo de expansión desmedida que surge del inconsciente. Tu sol se enfrenta con impulsos jupiterianos subjetivos que empujan hacia un optimismo excesivo.
 
@@ -104,7 +104,7 @@ Esta tensión te puede llevar a cometer excesos, ser demasiado exagerado o ideal
 
 La clave está en aprender que la moderación es la mejor virtud, encontrando formas de disfrutar la vida y expresar tu naturaleza genuina sin caer en excesos expansivos, pero integrando tu necesidad interna de crecimiento y exploración.
 
-## Conjunción de Saturno dracónico con el sol trópico
+## Conjunción de Saturno dracónico con Sol trópico
 
 Tu identidad consciente funciona como puente para fuerzas internas de disciplina y estructura que emergen desde tu inconsciente más profundo. Mientras tu sol busca expresión espontánea y vital, Saturno dracónico aporta desde adentro una corriente subjetiva de paciencia, disciplina y propósitos concretos que transforma tu manera natural de ser.
 
@@ -112,7 +112,7 @@ Te conviertes en alguien determinado, con los pies en la tierra y objetivos seri
 
 Tu capacidad para el trabajo persistente surge de esta influencia interna que te dota de disciplina natural, transformando tu vitalidad en una fuerza constructiva y perseverante.
 
-## Oposición de Saturno dracónico con el sol trópico
+## Oposición de Saturno dracónico con Sol trópico
 
 Vives una batalla constante entre tu deseo natural de brillar con confianza y fuerzas internas restrictivas que emergen desde tu inconsciente. Tu sol busca una expresión luminosa y espontánea, pero se enfrenta continuamente con miedos ancestrales y patrones internos de limitación que crean fricción en tu personalidad.
 
@@ -120,7 +120,7 @@ Esta tensión te genera una lucha interna permanente: por un lado, tu impulso so
 
 Cuando intentas expresarte naturalmente, te frustras ante las dificultades que surgen de esta tensión, confirmando sentimientos de inadecuación que no pertenecen a tu esencia solar. La clave está en entender que "la paciencia es un árbol de raíz amarga, pero de frutos muy dulces", concediéndote tiempo para forjar un sentido sólido del ser que honre tanto tu luminosidad como las lecciones de perseverancia.
 
-## Conjunción de Urano dracónico con el sol trópico
+## Conjunción de Urano dracónico con Sol trópico
 
 Una energía interna revolucionaria se fusiona con tu identidad consciente, inyectando desde tu inconsciente impulsos de rebeldía, innovación y diferenciación. Aunque tu sol intente brillar armoniosamente dentro de estructuras establecidas, estas corrientes subjetivas uranianas transforman tu expresión en algo novedoso, auténtico y ocasionalmente rebelde.
 
@@ -128,13 +128,13 @@ Desarrollas grandes deseos de independencia y te sientes atraído hacia todo lo 
 
 Esta influencia inconsciente transforma tu vitalidad solar en una fuerza innovadora y disruptiva que busca manifestarse a través de tu originalidad única.
 
-## Oposición de Urano dracónico con el sol trópico
+## Oposición de Urano dracónico con Sol trópico
 
 Experimentas un conflicto entre tu necesidad natural de expresión estable y fuerzas internas revolucionarias que emergen desde tu inconsciente. Tu sol desea brillar consistentemente, pero se ve desafiado por impulsos subjetivos uranianos que empujan hacia innovación disruptiva y la diferenciación radical.
 
 Esta fricción interna te coloca en una disyuntiva: tu impulso solar hacia la autenticidad estable versus corrientes profundas que demandan independencia y originalidad compulsivas. Tu interés por lo novedoso surge de esta batalla interna donde impulsos inconscientes te empujan hacia experiencias que fortalecen tu singularidad, pero pueden alejarte de tu autenticidad natural. La integración requiere encontrar formas de expresar tu ser genuino e incluir el costado innovador que pulsa desde tu inconsciente, pero sin caer en la rebeldía compulsiva.
 
-## Conjunción de Neptuno dracónico con el sol trópico
+## Conjunción de Neptuno dracónico con Sol trópico
 
 Corrientes internas de sensibilidad extrema e idealismo se fusionan con tu identidad, emergiendo desde capas inconscientes profundas. Tu sol recibe constantemente impulsos subjetivos neptunianos que difuminan los contornos de tu personalidad con imaginación y una percepción extraordinaria de la realidad.
 
@@ -142,7 +142,7 @@ Tienes un costado idealista que puede volverse ilusorio y un talento innato para
 
 La integración requiere proporcionarte espacios de silencio y orientar esta sensibilidad inconsciente hacia canales creativos, usando lenguajes simbólicos y disciplinas corporales como el yoga.
 
-## Oposición de Neptuno dracónico con el sol trópico
+## Oposición de Neptuno dracónico con Sol trópico
 
 Enfrentas una batalla entre tu necesidad de expresión clara y fuerzas internas de disolución que emergen desde tu inconsciente. Tu sol busca brillar de manera definida y tangible, pero se opone constantemente a impulsos subjetivos neptunianos que empujan hacia la fantasía y la sensibilidad extrema.
 
@@ -150,7 +150,7 @@ Esta tensión interna te genera una lucha permanente: tu impulso solar hacia la 
 
 La integración requiere encontrar espacios de silencio y orientar la sensibilidad hacia canales constructivos, manteniendo tu identidad anclada en la realidad.
 
-## Conjunción de Plutón dracónico con el sol trópico
+## Conjunción de Plutón dracónico con Sol trópico
 
 Fuerzas internas de transformación extrema se fusionan con tu identidad consciente, emergiendo desde las profundidades de tu inconsciente. Tu sol recibe constantemente impulsos subjetivos plutonianos que inyectan intensidad emocional y magnetismo vital, creando una personalidad compleja y penetrante.
 
@@ -158,7 +158,7 @@ Posees de modo natural una gran capacidad de transformación y de producir cambi
 
 Estás sujeto a crisis de identidad donde estas fuerzas inconscientes susurran impulsos transformadores, llevándote a sentir la necesidad de desembarazarte de lo viejo para evolucionar hacia una vida más significativa. El gran desafío es el manejo del poder, evitando extremos de omnipotencia o impotencia total.
 
-## Oposición de Plutón dracónico con el sol trópico
+## Oposición de Plutón dracónico con Sol trópico
 
 Vives una guerra interna entre tu deseo natural de equilibrio y fuerzas plutonianas inconscientes que demandan intensidad extrema. Tu sol busca una expresión armoniosa, pero se enfrenta con impulsos subjetivos de transformación obsesiva y emociones abrumadoras que crean una tensión constante.
 
@@ -168,7 +168,7 @@ Plutón dracónico ejerce su influencia haciendo que tu personalidad se polarice
 
 La integración requiere de un arduo trabajo consciente para que la energía plutoniana interna refuerce tu identidad en vez de dejar que domine completamente tu expresión natural.
 
-## Conjunción de Quirón dracónico con el sol trópico
+## Conjunción de Quirón dracónico con Sol trópico
 
 Corrientes internas de heridas ancestrales y sensibilidad hacia el dolor se fusionan con tu identidad, emergiendo desde las profundidades de tu inconsciente. Tu sol recibe constantemente impulsos subjetivos quironíanos que inyectan una capacidad extraordinaria para identificar y sanar el dolor, tanto propio como ajeno.
 
@@ -176,7 +176,7 @@ Tu identidad consciente está constantemente tocada por este dolor ancestral int
 
 Estos impulsos sanadores internos pulsan desde el interior por manifestarse a través de tu identidad, llevándote a transformar tus propias heridas en instrumentos de sanación para otros.
 
-## Oposición de Quirón dracónico con el sol trópico
+## Oposición de Quirón dracónico con Sol trópico
 
 Experimentas una batalla constante entre tu impulso natural hacia la vitalidad y fuerzas internas de dolor ancestral que emergen desde tu inconsciente. Tu sol busca brillar luminosamente, pero se opone a impulsos subjetivos quironíanos que empujan hacia la identificación con heridas y sufrimiento ajeno.
 
@@ -186,7 +186,7 @@ Puedes oscilar entre extremos: identificarte completamente con el rol de sanador
 
 La integración requiere encontrar formas de expresar tu luminosidad integrando estas corrientes internas sanadoras, para que refuercen tu vitalidad genuina.
 
-## Conjunción de Luna dracónica con la Luna trópica
+## Conjunción de Luna dracónica con Luna trópico
 
 La Luna dracónica representa tu naturaleza emocional más profunda, el núcleo instintivo esencial. Mientras que la Luna trópica muestra tu emotividad consciente y cómo respondes emocionalmente en la vida cotidiana, la Luna dracónica revela tus necesidades emocionales más puras. Podría describirse como el impulso nutritivo ancestral que pulsa desde las profundidades.
 
@@ -194,7 +194,7 @@ Cuando ambas luminarias se encuentran en conjunción, tu naturaleza emocional es
 
 Esta unificación genera una coherencia emocional fundamental donde constantemente sientes la armonía entre tu sentido de seguridad interno y cómo respondes emocionalmente en el mundo, creando una sensación de vivir desde una sola naturaleza emocional integrada y auténtica.
 
-## Oposición de Luna dracónica con la Luna trópica
+## Oposición de Luna dracónica con Luna trópico
 
 La Luna dracónica representa tu naturaleza emocional más profunda, el núcleo instintivo esencial. Mientras que la Luna trópica muestra tu emotividad consciente y cómo respondes emocionalmente en la vida cotidiana, la Luna dracónica revela tus necesidades emocionales más puras. Podría describirse como el impulso nutritivo ancestral que te define desde las profundidades.
 
@@ -204,7 +204,7 @@ Esta polarización genera un conflicto fundamental donde constantemente sientes 
 
 El desafío está en encontrar un punto medio creativo donde puedas honrar tanto tus necesidades emocionales profundas como tu expresión emocional consciente, desarrollando formas de integrar estas polaridades aparentemente opuestas en una síntesis emocional más elevada que nutra tanto tu alma como tu personalidad cotidiana.
 
-## Conjunción de Sol dracónico con la Luna trópica
+## Conjunción de Sol dracónico con Luna trópico
 
 Tu propósito interno del alma utiliza tu mundo emocional como canal principal para manifestarse. Mientras tu Luna busca nutrición y seguridad a través de patrones familiares conocidos, el Sol dracónico pulsa desde tus profundidades inconscientes, inyectando un sentido de misión eterna que trasciende esta vida específica.
 
@@ -212,7 +212,7 @@ Tus emociones cotidianas están constantemente impregnadas de propósito trascen
 
 Es fundamental reconocer que tus emociones son medios a través de los cuales tu propósito profundo se manifiesta en la realidad cotidiana.
 
-## Oposición de Sol dracónico con la Luna trópica
+## Oposición de Sol dracónico con Luna trópico
 
 Vives cierto grado de tensión entre tu propósito interno del alma y tus necesidades emocionales básicas. Tu Luna busca seguridad familiar sencilla, pero se enfrenta con impulsos inconscientes de misión que pueden exigir sacrificios emocionales significativos.
 
@@ -220,7 +220,7 @@ Esta tensión te coloca en un dilema: por un lado, tu impulso natural hacia la c
 
 Para la integración, es recomendable desarrollar rutinas que nutran tanto tu seguridad emocional como tu sentido de propósito. Busca formas de servir que no sacrifiquen completamente tu bienestar familiar. Practica el auto-cuidado como parte de tu misión, no como obstáculo para ella.
 
-## Conjunción de Mercurio dracónico con la Luna trópica
+## Conjunción de Mercurio dracónico con Luna trópico
 
 Tu sabiduría interna del alma utiliza tu sensibilidad emocional para comunicarse con el mundo. Mercurio dracónico pulsa desde tu inconsciente, inyectando conocimiento profundo y códigos de comunicación ancestrales en tu naturaleza emocional presente.
 
@@ -228,13 +228,13 @@ Tus emociones se convierten en vehículos para recibir y transmitir verdades uni
 
 Tu habilidad para comunicarte desde una autoridad emocional profunda te permite transmitir verdades complejas a través de una empatía genuina. Esto puede manifestarse como consejería intuitiva, sanación emocional o la capacidad de nutrir tanto emocional como intelectualmente.
 
-## Oposición de Mercurio dracónico con la Luna trópica
+## Oposición de Mercurio dracónico con Luna trópico
 
 Experimentas cierto grado de conflicto entre tu necesidad emocional de seguridad y los impulsos inconscientes de conocimiento. Tu Luna busca sentirse cómoda, pero se enfrenta con un caudal interno de información que pulsa por expresarse a través de la afectividad.
 
 Para ayudar a la integración, practica la escucha activa y la reflexión consciente. La escritura reflexiva puede servir como puente entre ambas energías. Busca terapias que integren el trabajo emocional con el desarrollo de comprensión. Desarrolla prácticas de meditación que incluyan tanto silencio mental como el reconocimiento emocional.
 
-## Conjunción de Venus dracónico con la Luna trópica
+## Conjunción de Venus dracónico con Luna trópico
 
 Tu sabiduría del amor interno utiliza tu mundo emocional para crear belleza y armonía trascendente. Venus dracónico pulsa desde tu inconsciente, inyectando corrientes de amor profundo y códigos de belleza universal en tu sensibilidad presente.
 
@@ -242,7 +242,7 @@ Tus emociones están constantemente al servicio de una expresión amorosa superi
 
 Esto se expresa a través de la creación de hogares hermosos, cuidado estético de tu entorno familiar, y la habilidad de sanar y transformar a otros a través de la armonía , el amor genuino y la expresión artística.
 
-## Oposición de Venus dracónico con la Luna trópica
+## Oposición de Venus dracónico con Luna trópico
 
 Luchas entre necesidades emocionales prácticas y ideales de amor que pueden resultar inalcanzables. Tu Luna busca vínculos familiares cómodos, pero se enfrenta con estándares inconscientes de belleza y armonía que pueden hacer que tus relaciones actuales se sientan insuficientes.
 
@@ -250,7 +250,7 @@ Puedes experimentar insatisfacción constante en las relaciones o la sensación 
 
 Son favorables las actividades artísticas pueden servir como puente entre ambas energías. Desarrolla rituales de belleza en el hogar que honren tanto la comodidad como la estética sublime.
 
-## Conjunción de Marte dracónico con la Luna trópica
+## Conjunción de Marte dracónico con Luna trópico
 
 Tu sabiduría guerrera interna utiliza tu mundo emocional como vehículo para expresar una fuerza combativa subjetiva. Marte dracónico pulsa desde tu inconsciente, inyectando energía guerrera e impulsos de conquista que transforman tu naturaleza emocional.
 
@@ -258,7 +258,7 @@ Tu mundo emocional nunca es meramente receptivo, sino que está constantemente a
 
 Esta energía marciana puede emerger como agresividad emocional intensa, requiriendo espacios donde puedas competir, liderar y tomar decisiones protectoras de manera constructiva.
 
-## Oposición de Marte dracónico con la Luna trópica
+## Oposición de Marte dracónico con Luna trópico
 
 Vives cierta tensión entre tu impulso natural hacia la nutrición pacífica y fuerzas inconscientes combativas que te empujan hacia la confrontación emocional. Tu mundo emocional puede volverse reactivo, defensivo y explosivo como respuesta a esta batalla interna.
 
@@ -266,7 +266,7 @@ Coexisten la necesidad de nutrir armónicamente y los impulsos combativos, crean
 
 Ayudan a la integración las técnicas de respiración consciente para evitar reacciones emocionales. Las actividades físicas regulares son esenciales, especialmente deportes competitivos o artes marciales. Desarrolla límites emocionales claros que protejan tu sensibilidad sin recurrir a la agresividad automática. Busca formas de liderazgo protector donde puedas canalizar tu fuerza marciana al servicio de tu naturaleza nutritiva.
 
-## Conjunción de Júpiter dracónico con la Luna trópica
+## Conjunción de Júpiter dracónico con Luna trópico
 
 Tu sabiduría expansiva interna utiliza tu mundo emocional para manifestar una fe extraordinaria en la vida. Júpiter dracónico pulsa desde tu inconsciente, inyectando corrientes de optimismo y búsqueda de significado trascendente en tu sensibilidad emocional.
 
@@ -274,7 +274,7 @@ Tu temperamento emocional se vuelve jovial, expansivo y franco. Irradias positiv
 
 Esto puede manifestarse a través de hogares que sirven como centros de aprendizaje, nutrición emocional que incluye crecimiento filosófico, y la capacidad de expandir horizontes emocionales y espirituales de otros.
 
-## Oposición de Júpiter dracónico con la Luna trópica
+## Oposición de Júpiter dracónico con Luna trópico
 
 Enfrentas cierto grado de tensión entre necesidad de seguridad emocional simple y los impulsos inconscientes de expansión que pueden resultar abrumadores. Tu Luna busca estabilidad familiar, pero se opone a fuerzas internas que demandan un crecimiento constante y se manifiestan de modo automático.
 
@@ -282,7 +282,7 @@ Puedes oscilar entre búsqueda de seguridad básica y una inquietud existencial 
 
 Puede ayudarte practicar la gratitud consciente por lo simple para encontrar un significado trascendente en las experiencias cotidianas. El mindfulness emocional es especialmente útil para valorar el presente sin ceder a la presión subjetiva de la expansión constante.
 
-## Conjunción de Saturno dracónico con la Luna trópica
+## Conjunción de Saturno dracónico con Luna trópico
 
 Tu sabiduría estructurante interna utiliza tu mundo emocional para manifestar disciplina y construcción paciente. Saturno dracónico pulsa desde tu inconsciente, inyectando corrientes de responsabilidad y estructura que transforman tu naturaleza emocional espontánea.
 
@@ -290,7 +290,7 @@ Te vuelves determinado emocionalmente, con propósitos serios en tu vida afectiv
 
 Esto se manifiesta a través de tradiciones familiares sólidas, construcción paciente de vínculos perdurables, y la capacidad de nutrir de manera consistente y responsable.
 
-## Oposición de Saturno dracónico con la Luna trópica
+## Oposición de Saturno dracónico con Luna trópico
 
 Luchas entre tu derecho natural a expresión emocional libre y fuerzas inconscientes restrictivas que juzgan severamente tu vulnerabilidad. Tu mundo emocional oscila entre la expresión natural y la represión severa donde sientes que no tienes derecho a manifestar tus necesidades emocionales.
 
@@ -298,7 +298,7 @@ Puedes experimentar cierto grado de autocrítica emocional o la sensación de qu
 
 Puede ayudarte practicar la autocompasión consciente, reconociendo que tener necesidades emocionales es humano, no debilidad. Desarrolla rutinas de cuidado que incluyan momentos de expresión libre y reflexión disciplinada. Aprende que la verdadera disciplina emocional significa honrar los sentimientos de manera constructiva, no reprimirlos.
 
-## Conjunción de Urano dracónico con la Luna trópica
+## Conjunción de Urano dracónico con Luna trópico
 
 Fuerzas revolucionarias internas utilizan tu mundo emocional para manifestar innovación y ruptura de estructuras. Urano dracónico pulsa desde tu inconsciente, inyectando corrientes eléctricas que alteran súbitamente tu estado emocional y te impulsan hacia formas originales de conexión afectiva.
 
@@ -306,7 +306,7 @@ Experimentas la necesidad subjetiva de crear nuevas formas de "familia" o perten
 
 Tu mundo emocional se caracteriza por cambios súbitos e inesperados que siguen patrones que trascienden la lógica emocional convencional.
 
-## Oposición de Urano dracónico con la Luna trópica
+## Oposición de Urano dracónico con Luna trópico
 
 Vives cierto grado de tensión entre la necesidad de estabilidad emocional y fuerzas inconscientes que demandan libertad radical. Tu mundo emocional se caracteriza por cierta dificultad para crear estabilidad duradera, manifestándose como nerviosismo o ansiedad cuyo origen te cuesta identificar.
 
@@ -314,7 +314,7 @@ Cualquier vínculo emocional puede sentirse restrictivo debido a impulsos intern
 
 Practica la comunicación emocional clara para expresar tanto tu necesidad de libertad como tu deseo de intimidad. Desarrolla "vulnerabilidad programada" - momentos específicos para la conexión profunda alternados con espacios de independencia. Busca relaciones que honren tanto la autonomía como la intimidad, creando vínculos libres pero profundamente conectados.
 
-## Conjunción de Neptuno dracónico con la Luna trópica
+## Conjunción de Neptuno dracónico con Luna trópico
 
 Fuerzas místicas internas utilizan tu mundo emocional para conectar con planos sutiles de la realidad. Neptuno dracónico pulsa desde tu inconsciente, inyectando sensibilidad extrema e idealismo que te convierte en "defensor de pobres y ausentes", relegando tus intereses personales.
 
@@ -324,7 +324,7 @@ Tu desafío principal es aprender a discriminar cuáles sentimientos son tuyos y
 
 Es ideal expresar tu mundo idealizado a través de lenguajes simbólicos como la música o la fotografía, y desarrollar una conexión con planos elevados a través de meditación o yoga.
 
-## Oposición de Neptuno dracónico con la Luna trópica
+## Oposición de Neptuno dracónico con Luna trópico
 
 La tensión entre tus necesidades emocionales y las fuerzas inconscientes de disolución que pueden resultar abrumadoras. Tu mundo emocional puede sucumbir a momentos de confusión total donde no puedes discriminar qué sentimientos son tuyos.
 
@@ -332,7 +332,7 @@ Puedes experimentar una constante "invasión" emocional por sentimientos ajenos 
 
 Desarrolla técnicas de discriminación emocional para distinguir qué emociones son tuyas. Las prácticas de grounding (toma de tierra) son esenciales - actividades que te conecten con la tierra y el cuerpo físico. Establece rutinas de limpieza energética. Usa visualización de burbujas protectoras. Busca expresión artística como válvula de escape saludable.
 
-## Conjunción de Plutón dracónico con la Luna trópica
+## Conjunción de Plutón dracónico con Luna trópico
 
 Fuerzas transformadoras internas utilizan tu mundo emocional para manifestar intensidad extrema y poder emocional profundo. Plutón dracónico pulsa desde tu inconsciente, dotándote de intuición excepcional para penetrar motivaciones ocultas y detectar aspectos oscuros de situaciones.
 
@@ -340,13 +340,13 @@ Tu naturaleza emocional se ve afectada por la corriente subjetiva de Plutón dra
 
 Aunque tu profundidad emocional te confiere resistencia psicológica enorme, esta intensidad se expresa de modo automático y puede resultar invasiva. Necesitas discernimiento para identificar cuándo tu intensidad es adecuada.
 
-## Oposición de Plutón dracónico con la Luna trópica
+## Oposición de Plutón dracónico con Luna trópico
 
 Luchas entre la necesidad de estabilidad emocional y fuerzas inconscientes de transformación tan intensas que cualquier situación se convierte en crisis existencial. Puedes oscilar entre la calma aparente y períodos donde sientes que tu mundo emocional está siendo completamente reconstituido. Pero puedes transformarte profundamente manteniendo elementos de estabilidad.
 
 Desarrolla técnicas de procesamiento de crisis para navegar transformaciones sin destruir tu base emocional. Poner en palabras o expresar de alguna manera lo que te sucede, es esencial para procesar la intensidad plutoniana. Crea rituales de transición que honren tanto la seguridad emocional como los procesos de muerte-renacimiento. Practica técnicas de respiración profunda durante momentos intensos.
 
-## Conjunción de Quirón dracónico con la Luna trópica
+## Conjunción de Quirón dracónico con Luna trópico
 
 Fuerzas sanadoras internas utilizan tu mundo emocional para manifestar una sensibilidad extrema hacia el dolor y una capacidad sanadora profunda. Quirón dracónico pulsa desde tu inconsciente, dotándote de un grado de intuición excepcional para detectar heridas emocionales ocultas y ofrecer sanación natural.
 
@@ -354,7 +354,7 @@ Detectas instintivamente los dolores ocultos de las personas y situaciones. Teme
 
 Tu desafío es descomprimir la sensibilidad hacia el dolor, desarrollando discernimiento para identificar cuándo tu rol sanador es apropiado sin perderte en el proceso.
 
-## Oposición de Quirón dracónico con la Luna trópica
+## Oposición de Quirón dracónico con Luna trópico
 
 Experimentas cierto grado de tensión entre tu derecho al bienestar emocional y fuerzas inconscientes que te empujan hacia la identificación constante con el dolor ajeno. Puedes oscilar entre la búsqueda legítima de comodidad y sentirte obligado a absorber el sufrimiento que te rodea.
 
@@ -1626,7 +1626,7 @@ En oposición, estos dos impulsos crean una disyuntiva: la capacidad para inspir
 
 El secreto consiste en integrar el impulso profundo de propósito personal con la sensibilidad mística; aprender que tu esencia más auténtica puede expresarse a través de lenguajes simbólicos sin desdibujarse. Tu conexión mística puede servir a tu identidad más profunda sin diluirla, tu propósito auténtico puede expresarse a través de la espiritualidad sin perderse en ella.
 
-## Conjunción de Luna dracónico con Neptuno trópico
+## Conjunción de Luna dracónica con Neptuno trópico
 
 Neptuno trópico es el lado espiritual y místico en la vida diaria, la forma natural de buscar inspiración y conectar con el inconsciente y el mundo de lo simbólico.
 

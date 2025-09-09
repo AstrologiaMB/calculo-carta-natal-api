@@ -7,6 +7,7 @@
    - Geocodificación de lugares de nacimiento
    - Determinación automática de zonas horarias
    - **✅ NUEVO:** Análisis cruzado dracónico-tropical
+   - **✅ NUEVO:** Fix de género dracónico - Luna vs Mercurio resuelto
 
 2. **Microservicio FastAPI**:
    - Endpoints HTTP completamente funcionales
