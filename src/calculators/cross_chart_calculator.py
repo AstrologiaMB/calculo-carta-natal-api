@@ -62,28 +62,29 @@ def encontrar_casa_tropical(cuspide_drac_lon: float, cuspides_tropicales: List[T
     
     Args:
         cuspide_drac_lon: Longitud de la cúspide dracónica
-        cuspides_tropicales: Lista de tuplas (numero_casa, longitud) ordenadas
+        cuspides_tropicales: Lista de tuplas (numero_casa, longitud) en orden natural 1-12
         
     Returns:
         Número de casa tropical (1-12)
     """
     cuspide_drac_lon = normalizar_longitud(cuspide_drac_lon)
     
+    # Recorrer las casas en orden natural (1-12)
     for i in range(len(cuspides_tropicales)):
         casa_actual = cuspides_tropicales[i][0]
-        lon_actual = cuspides_tropicales[i][1]
+        lon_actual = normalizar_longitud(cuspides_tropicales[i][1])
         
-        # Obtener siguiente cúspide (circular)
+        # Obtener siguiente cúspide (circular: después de casa 12 viene casa 1)
         siguiente_idx = (i + 1) % len(cuspides_tropicales)
-        lon_siguiente = cuspides_tropicales[siguiente_idx][1]
+        lon_siguiente = normalizar_longitud(cuspides_tropicales[siguiente_idx][1])
         
-        # Manejar cruce de 0°/360°
+        # Determinar si la cúspide dracónica cae en esta casa tropical
         if lon_actual > lon_siguiente:
-            # Cruce de 0°/360°
+            # Cruce de 0°/360° (ej: casa 12 a casa 1)
             if cuspide_drac_lon >= lon_actual or cuspide_drac_lon < lon_siguiente:
                 return casa_actual
         else:
-            # Caso normal
+            # Caso normal (sin cruce de 0°/360°)
             if lon_actual <= cuspide_drac_lon < lon_siguiente:
                 return casa_actual
     
@@ -158,15 +159,15 @@ def calcular_cuspides_cruzadas(carta_tropical: dict, carta_draconica: dict) -> L
     """
     cuspides_cruzadas = []
     
-    # Crear lista ordenada de cúspides tropicales
+    # Crear lista de cúspides tropicales en orden natural (1-12)
+    # NO ordenar por longitud para mantener secuencia correcta de casas
     cuspides_tropicales = []
     for casa in range(1, 13):
         if str(casa) in carta_tropical['houses']:
             lon = carta_tropical['houses'][str(casa)]['longitude']
             cuspides_tropicales.append((casa, lon))
     
-    # Ordenar por longitud
-    cuspides_tropicales.sort(key=lambda x: x[1])
+    # Mantener orden natural de casas 1-12 (NO ordenar por longitud)
     
     # Para cada cúspide dracónica
     for casa_drac in range(1, 13):
