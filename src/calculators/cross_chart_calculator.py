@@ -183,16 +183,13 @@ def calcular_cuspides_cruzadas(carta_tropical: dict, carta_draconica: dict) -> L
         # Calcular distancia
         distancia_info = calcular_distancia_cuspide(cuspide_drac_lon, cuspides_tropicales, casa_tropical)
         
-        # Formatear grados
-        grados_formateados = formatear_grados_minutos(casa_drac_data['degrees'])
-        
         cuspides_cruzadas.append({
             'casa_draconica': casa_drac,
             'signo_draconica': casa_drac_data['sign'],
-            'grados_draconica': grados_formateados,
+            'grados_draconica': casa_drac_data['degrees'],  # Devolver grados decimales
             'casa_tropical_ubicacion': casa_tropical,
             'distancia_desde_cuspide': distancia_info,
-            'descripcion': f"Casa {casa_drac} Dracónica ({casa_drac_data['sign']} {grados_formateados}) cae en Casa {casa_tropical} Tropical"
+            'descripcion': f"Casa {casa_drac} Dracónica ({casa_drac_data['sign']} {casa_drac_data['degrees']}°) cae en Casa {casa_tropical} Tropical"
         })
     
     return cuspides_cruzadas
@@ -268,23 +265,19 @@ def calcular_aspectos_cruzados(carta_tropical: dict, carta_draconica: dict,
             aspectos = calcular_aspectos_entre_puntos(lon_drac, lon_trop, orbe_conjuncion, orbe_oposicion)
             
             for aspecto in aspectos:
-                # Formatear grados
-                grados_drac = formatear_grados_minutos(punto_drac_data['degrees'])
-                grados_trop = formatear_grados_minutos(punto_trop_data['degrees'])
-                
                 aspectos_cruzados.append({
                     'punto_draconico': punto_drac,
                     'signo_draconico': punto_drac_data['sign'],
-                    'grados_draconico': grados_drac,
+                    'grados_draconico': punto_drac_data['degrees'],  # Grados decimales
                     'punto_tropical': punto_trop,
                     'signo_tropical': punto_trop_data['sign'],
-                    'grados_tropical': grados_trop,
+                    'grados_tropical': punto_trop_data['degrees'],  # Grados decimales
                     'tipo_aspecto': aspecto['tipo'],
                     'orbe_grados': int(aspecto['orbe']),
                     'orbe_minutos': int((aspecto['orbe'] % 1) * 60),
                     'orbe_decimal': round(aspecto['orbe'], 2),
                     'exacto': aspecto['orbe'] < 1.0,
-                    'descripcion': f"{punto_drac} Dracónico ({punto_drac_data['sign']} {grados_drac}) {aspecto['tipo'].lower()} {punto_trop} Tropical ({punto_trop_data['sign']} {grados_trop}) - Orbe: {int(aspecto['orbe'])}°{int((aspecto['orbe'] % 1) * 60)}'"
+                    'descripcion': f"{punto_drac} Dracónico ({punto_drac_data['sign']} {punto_drac_data['degrees']}°) {aspecto['tipo'].lower()} {punto_trop} Tropical ({punto_trop_data['sign']} {punto_trop_data['degrees']}°) - Orbe: {int(aspecto['orbe'])}°{int((aspecto['orbe'] % 1) * 60)}'"
                 })
     
     # Ordenar por exactitud (orbe más pequeño primero)
