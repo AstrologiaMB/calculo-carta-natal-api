@@ -19,14 +19,8 @@ class Settings(BaseSettings):
     port: int = 8001
     reload: bool = True  # Solo para desarrollo
     
-    # CORS - Permitir requests desde Next.js y Railway
-    cors_origins: List[str] = [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:3001",  # Por si cambia el puerto de Next.js
-        "https://*.railway.app",  # Railway deployments
-        "https://calculo-carta-natal-api-production.up.railway.app",  # Railway API
-    ]
+    # CORS - Permitir todos los orígenes (para testing Railway)
+    cors_origins: List[str] = ["*"]
     cors_allow_credentials: bool = True
     cors_allow_methods: List[str] = ["*"]
     cors_allow_headers: List[str] = ["*"]
