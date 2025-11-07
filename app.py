@@ -99,10 +99,20 @@ async def general_exception_handler(request: Request, exc: Exception):
         content=error_response.model_dump()
     )
 
+@app.on_event("startup")
+async def startup_event():
+    """Log when server is ready"""
+    logger.info("=" * 60)
+    logger.info(f"🚀 {settings.app_name} v{settings.version} READY")
+    logger.info(f"📡 Listening on 0.0.0.0:$PORT")
+    logger.info(f"✅ All routes registered")
+    logger.info("=" * 60)
+
 @app.get("/", response_model=Dict[str, Any])
 async def root():
     """Información básica del servicio"""
-    return {
+    logger.info("🎯 ROOT ENDPOINT HIT - Request received successfully!")
+    response = {
         "service": settings.app_name,
         "version": settings.version,
         "status": "running",
@@ -116,20 +126,14 @@ async def root():
         },
         "description": settings.description
     }
+    logger.info(f"✅ Returning response: {response['status']}")
+    return response
 
-@app.get("/health", response_model=HealthResponse)
+@app.get("/health")
 async def health_check():
-    """Health check del servicio"""
-    # Simplified health check for Railway deployment
-    # Dependencies are verified during startup, not on every health check
-    return HealthResponse(
-        status="healthy",
-        service=settings.app_name,
-        version=settings.version,
-        timestamp=datetime.now(),
-        python_version=settings.python_version,
-        dependencies_ok=True
-    )
+    """Ultra-simplified health check for Railway"""
+    logger.info("❤️ HEALTH CHECK HIT - Responding...")
+    return {"status": "ok"}
 
 @app.post("/carta-natal/tropical", response_model=CartaNatalResponse)
 async def calcular_carta_tropical(request: UserDataRequest):
