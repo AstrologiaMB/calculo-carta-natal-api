@@ -1,2 +1,2 @@
 [phases.setup]
-nixPkgs = ["sqlite"]
+aptPkgs = ['libsqlite3-0']
