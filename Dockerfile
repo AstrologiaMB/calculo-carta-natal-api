@@ -21,5 +21,5 @@ COPY . .
 # Expose port (Railway will set PORT env variable)
 EXPOSE 8001
 
-# Run the application
-CMD uvicorn app:app --host 0.0.0.0 --port $PORT
+# Run the application with Railway-optimized settings
+CMD uvicorn app:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 90 --access-log --log-level info
