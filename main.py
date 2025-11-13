@@ -104,7 +104,7 @@ def get_coordinates(city: str, country: str) -> tuple:
     """Obtiene las coordenadas y zona horaria de una ubicación."""
     try:
         geolocator = Nominatim(user_agent="carta_natal_app")
-        location = geolocator.geocode(f"{city}, {country}", exactly_one=True)
+        location = geolocator.geocode(f"{city}, {country}", exactly_one=True, timeout=10)
         
         if location:
             timezone = get_timezone(location.latitude, location.longitude)
@@ -114,6 +114,72 @@ def get_coordinates(city: str, country: str) -> tuple:
                 raise ValueError("No se pudo determinar la zona horaria")
         else:
             raise ValueError("No se pudo encontrar la ubicación")
+            
+    except GeocoderTimedOut:
+        raise ValueError("Tiempo de espera agotado al buscar la ubicación")
+    except Exception as e:
+        raise ValueError(f"Error al buscar la ubicación: {str(e)}")
+
+def get_coordinates_with_options(city: str, country: str, limit: int = 5) -> dict:
+    """
+    Obtiene coordenadas con soporte para múltiples resultados.
+    Retorna estructura diferente si hay 1 vs múltiples opciones.
+    
+    Args:
+        city: Ciudad a buscar
+        country: País a buscar
+        limit: Número máximo de resultados (default: 5)
+        
+    Returns:
+        dict: Si hay 1 resultado: {"single": True, "lat": float, "lon": float, "timezone": str, "address": str}
+              Si hay múltiples: {"multiple": True, "options": [{"address": str, "lat": float, "lon": float, "timezone": str}, ...]}
+    """
+    try:
+        geolocator = Nominatim(user_agent="carta_natal_app")
+        locations = geolocator.geocode(
+            f"{city}, {country}", 
+            exactly_one=False, 
+            limit=limit,
+            timeout=10
+        )
+        
+        if not locations:
+            raise ValueError("No se pudo encontrar la ubicación")
+        
+        if len(locations) == 1:
+            # Solo una opción - retorno directo
+            loc = locations[0]
+            timezone = get_timezone(loc.latitude, loc.longitude)
+            return {
+                "single": True,
+                "lat": loc.latitude,
+                "lon": loc.longitude,
+                "timezone": timezone,
+                "address": loc.address
+            }
+        else:
+            # Múltiples opciones - retornar para selección
+            options = []
+            for loc in locations:
+                try:
+                    tz = get_timezone(loc.latitude, loc.longitude)
+                    options.append({
+                        "address": loc.address,
+                        "lat": loc.latitude,
+                        "lon": loc.longitude,
+                        "timezone": tz
+                    })
+                except:
+                    # Si falla timezone, omitir esta opción
+                    continue
+            
+            if not options:
+                raise ValueError("No se pudieron procesar las ubicaciones encontradas")
+                
+            return {
+                "multiple": True,
+                "options": options
+            }
             
     except GeocoderTimedOut:
         raise ValueError("Tiempo de espera agotado al buscar la ubicación")
