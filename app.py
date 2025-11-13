@@ -13,7 +13,7 @@ from typing import Dict, Any
 
 # Importar funciones existentes de main.py
 try:
-    from main import calcular_carta_natal, generar_json_reducido, get_coordinates
+    from main import calcular_carta_natal, generar_json_reducido, get_coordinates, get_coordinates_with_options
 except ImportError as e:
     print(f"Error importando main.py: {e}")
     print("Asegúrate de que main.py esté en el mismo directorio")
@@ -46,10 +46,17 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
+# ⚠️ SECURITY TODO: Change CORS to specific origins before production
+# Currently using wildcard (*) for testing - INSECURE for production
+# See: RAILWAY_LESSONS_LEARNED.md section "CORS Gradual"
+# See: SECURITY_PENDING.md for complete security checklist
+# Action required when: Frontend is deployed on Railway
+# Current config in config.py: cors_origins = ["*"]  # TODO: Replace with specific URLs
+
 # Configurar CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins,
+    allow_origins=settings.cors_origins,  # TODO: Change from wildcard to specific domains
     allow_credentials=settings.cors_allow_credentials,
     allow_methods=settings.cors_allow_methods,
     allow_headers=settings.cors_allow_headers,
@@ -134,6 +141,30 @@ async def health_check():
     """Ultra-simplified health check for Railway"""
     logger.info("❤️ HEALTH CHECK HIT - Responding...")
     return {"status": "ok"}
+
+@app.post("/geocode/search")
+async def buscar_ubicaciones(request: Request):
+    """Endpoint para buscar múltiples ubicaciones antes de calcular carta"""
+    body = await request.json()
+    city = body.get('city')
+    country = body.get('country')
+    
+    logger.info(f"Buscando ubicaciones para: {city}, {country}")
+    
+    try:
+        result = get_coordinates_with_options(city, country)
+        
+        return {
+            "success": True,
+            "data": result
+        }
+        
+    except Exception as e:
+        logger.error(f"Error buscando ubicaciones: {e}")
+        raise HTTPException(
+            status_code=500, 
+            detail=f"Error buscando ubicación: {str(e)}"
+        )
 
 @app.post("/carta-natal/tropical", response_model=CartaNatalResponse)
 async def calcular_carta_tropical(request: UserDataRequest):
