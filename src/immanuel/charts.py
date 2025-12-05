@@ -243,8 +243,14 @@ class DraconicChart(Chart):
         node_longitude = Decimal(str(self._objects[chart.TRUE_NORTH_NODE]['lon']))
         
         # Convertir objetos con precisión decimal
+        # IMPORTANTE: Crear copias de los objetos para no modificar la caché global de ephemeris
+        # Si modificamos los objetos directamente, afectamos a futuras llamadas de cartas tropicales
+        new_objects = {}
         for index, obj in self._objects.items():
-            tropical_lon = Decimal(str(obj['lon']))
+            # Crear copia superficial del diccionario (suficiente ya que solo modificamos valores primitivos)
+            new_obj = obj.copy()
+            
+            tropical_lon = Decimal(str(new_obj['lon']))
             draconic_lon = tropical_lon - node_longitude
             
             # Normalizar con precisión
@@ -254,11 +260,18 @@ class DraconicChart(Chart):
                 draconic_lon -= 360
                 
             # Actualizar manteniendo precisión máxima
-            obj['lon'] = float(draconic_lon)
+            new_obj['lon'] = float(draconic_lon)
+            new_objects[index] = new_obj
+            
+        self._objects = new_objects
         
         # Mismo proceso para casas
+        new_houses = {}
         for index, house in self._houses.items():
-            tropical_lon = Decimal(str(house['lon']))
+            # Crear copia superficial
+            new_house = house.copy()
+            
+            tropical_lon = Decimal(str(new_house['lon']))
             draconic_lon = tropical_lon - node_longitude
             
             if draconic_lon < 0:
@@ -266,7 +279,10 @@ class DraconicChart(Chart):
             elif draconic_lon >= 360:
                 draconic_lon -= 360
                 
-            house['lon'] = float(draconic_lon)
+            new_house['lon'] = float(draconic_lon)
+            new_houses[index] = new_house
+            
+        self._houses = new_houses
         
         # Actualizar triad para cálculos posteriores (código original)
         self._triad[chart.SUN] = self._objects[chart.SUN]
