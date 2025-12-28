@@ -18,8 +18,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Expose port (Railway will set PORT env variable)
+# Expose port for Fly.io
 EXPOSE 8001
 
-# Run the application with Railway-optimized settings
-CMD uvicorn app:app --host 0.0.0.0 --port $PORT --timeout-keep-alive 90 --access-log --log-level info
+# Run the application with Fly.io settings
+CMD uvicorn app:app --host 0.0.0.0 --port 8001 --timeout-keep-alive 90 --access-log --log-level info
