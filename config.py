@@ -19,8 +19,13 @@ class Settings(BaseSettings):
     port: int = 8001
     reload: bool = True  # Solo para desarrollo
     
-    # CORS - Permitir todos los orígenes (para testing Railway)
-    cors_origins: List[str] = ["*"]
+    # CORS - Permitir orígenes específicos (Producción y Desarrollo)
+    cors_origins: List[str] = [
+        "http://localhost:3000",
+        "https://homepageastrowellness.fly.dev",
+        "https://astrochat.online",
+        "https://www.astrochat.online"
+    ]
     cors_allow_credentials: bool = True
     cors_allow_methods: List[str] = ["*"]
     cors_allow_headers: List[str] = ["*"]
