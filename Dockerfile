@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 ARG COMMIT_SHA
-ENV COMMIT_SHA=$COMMIT_SHA
+ENV COMMIT_SHA="${COMMIT_SHA}"
 
 # Set working directory
 WORKDIR /app
