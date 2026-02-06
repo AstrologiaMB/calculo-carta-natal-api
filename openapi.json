@@ -1,0 +1,648 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Carta Natal API - Astrowellness",
+    "description": "Microservicio para c\u00e1lculo de cartas natales astrol\u00f3gicas",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Root",
+        "description": "Informaci\u00f3n b\u00e1sica del servicio",
+        "operationId": "root__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Root  Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Health Check",
+        "description": "Ultra-simplified health check for Railway",
+        "operationId": "health_check_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/geocode/search": {
+      "post": {
+        "summary": "Buscar Ubicaciones",
+        "description": "Endpoint para buscar m\u00faltiples ubicaciones antes de calcular carta",
+        "operationId": "buscar_ubicaciones_geocode_search_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/carta-natal/tropical": {
+      "post": {
+        "summary": "Calcular Carta Tropical",
+        "description": "Calcular carta natal tr\u00f3pica",
+        "operationId": "calcular_carta_tropical_carta_natal_tropical_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDataRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CartaNatalResponseStrict"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/carta-natal/draconica": {
+      "post": {
+        "summary": "Calcular Carta Draconica",
+        "description": "Calcular carta natal drac\u00f3nica",
+        "operationId": "calcular_carta_draconica_carta_natal_draconica_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDataRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CartaNatalResponseStrict"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/carta-natal/cruzada": {
+      "post": {
+        "summary": "Calcular Carta Cruzada",
+        "description": "Calcular an\u00e1lisis cruzado drac\u00f3nico-tropical",
+        "operationId": "calcular_carta_cruzada_carta_natal_cruzada_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDataRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CartaNatalResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AspectData": {
+        "properties": {
+          "p1": {
+            "type": "string",
+            "title": "P1",
+            "description": "First planet name"
+          },
+          "p2": {
+            "type": "string",
+            "title": "P2",
+            "description": "Second planet name"
+          },
+          "aspect": {
+            "type": "string",
+            "title": "Aspect",
+            "description": "Aspect name (e.g., Conjunction)"
+          },
+          "orb": {
+            "type": "number",
+            "title": "Orb",
+            "description": "Orb of the aspect in degrees"
+          },
+          "applying": {
+            "type": "boolean",
+            "title": "Applying",
+            "description": "True if applying, False if separating"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "p1",
+          "p2",
+          "aspect",
+          "orb",
+          "applying"
+        ],
+        "title": "AspectData",
+        "description": "Data strict for an aspect"
+      },
+      "BalanceData": {
+        "properties": {
+          "elements": {
+            "$ref": "#/components/schemas/ElementCount"
+          },
+          "modalities": {
+            "$ref": "#/components/schemas/ModalityCount"
+          },
+          "polarities": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "type": "object",
+            "title": "Polarities"
+          }
+        },
+        "type": "object",
+        "required": [
+          "elements",
+          "modalities",
+          "polarities"
+        ],
+        "title": "BalanceData"
+      },
+      "CartaNatalResponse": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "title": "Success"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data"
+          },
+          "data_reducido": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data Reducido"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "success"
+        ],
+        "title": "CartaNatalResponse",
+        "description": "Respuesta con datos de carta natal"
+      },
+      "CartaNatalResponseStrict": {
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "title": "Success"
+          },
+          "data": {
+            "$ref": "#/components/schemas/NatalChart"
+          },
+          "data_reducido": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Data Reducido"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error"
+          },
+          "timestamp": {
+            "type": "string",
+            "title": "Timestamp"
+          }
+        },
+        "type": "object",
+        "required": [
+          "success",
+          "data"
+        ],
+        "title": "CartaNatalResponseStrict",
+        "description": "Strict Response Wrapper replacing CartaNatalResponse"
+      },
+      "ElementCount": {
+        "properties": {
+          "fire": {
+            "type": "integer",
+            "title": "Fire"
+          },
+          "earth": {
+            "type": "integer",
+            "title": "Earth"
+          },
+          "air": {
+            "type": "integer",
+            "title": "Air"
+          },
+          "water": {
+            "type": "integer",
+            "title": "Water"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fire",
+          "earth",
+          "air",
+          "water"
+        ],
+        "title": "ElementCount"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HouseData": {
+        "properties": {
+          "house": {
+            "type": "integer",
+            "maximum": 12.0,
+            "minimum": 1.0,
+            "title": "House",
+            "description": "House number"
+          },
+          "sign": {
+            "type": "string",
+            "title": "Sign",
+            "description": "Zodiac sign on the cusp"
+          },
+          "degree": {
+            "type": "number",
+            "exclusiveMaximum": 30.0,
+            "minimum": 0.0,
+            "title": "Degree",
+            "description": "Degree within the sign"
+          },
+          "minutes": {
+            "type": "integer",
+            "exclusiveMaximum": 60.0,
+            "minimum": 0.0,
+            "title": "Minutes",
+            "description": "Minutes portion"
+          },
+          "abs_degree": {
+            "type": "number",
+            "exclusiveMaximum": 360.0,
+            "minimum": 0.0,
+            "title": "Abs Degree",
+            "description": "Absolute degree in the zodiac"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "house",
+          "sign",
+          "degree",
+          "minutes",
+          "abs_degree"
+        ],
+        "title": "HouseData",
+        "description": "Data strict for a house cusp"
+      },
+      "ModalityCount": {
+        "properties": {
+          "cardinal": {
+            "type": "integer",
+            "title": "Cardinal"
+          },
+          "fixed": {
+            "type": "integer",
+            "title": "Fixed"
+          },
+          "mutable": {
+            "type": "integer",
+            "title": "Mutable"
+          }
+        },
+        "type": "object",
+        "required": [
+          "cardinal",
+          "fixed",
+          "mutable"
+        ],
+        "title": "ModalityCount"
+      },
+      "NatalChart": {
+        "properties": {
+          "points": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/PointData"
+            },
+            "type": "object",
+            "title": "Points"
+          },
+          "houses": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/HouseData"
+            },
+            "type": "object",
+            "title": "Houses"
+          },
+          "aspects": {
+            "items": {
+              "$ref": "#/components/schemas/AspectData"
+            },
+            "type": "array",
+            "title": "Aspects"
+          },
+          "balance": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/BalanceData"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "points",
+          "houses",
+          "aspects"
+        ],
+        "title": "NatalChart",
+        "description": "Strict Schema for Natal Chart Response"
+      },
+      "PointData": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": "Name of the celestial body"
+          },
+          "sign": {
+            "type": "string",
+            "title": "Sign",
+            "description": "Zodiac sign name"
+          },
+          "sign_id": {
+            "type": "integer",
+            "maximum": 11.0,
+            "minimum": 0.0,
+            "title": "Sign Id",
+            "description": "Zodiac sign index (0=Aries)"
+          },
+          "degree": {
+            "type": "number",
+            "exclusiveMaximum": 30.0,
+            "minimum": 0.0,
+            "title": "Degree",
+            "description": "Degree within the sign"
+          },
+          "abs_degree": {
+            "type": "number",
+            "exclusiveMaximum": 360.0,
+            "minimum": 0.0,
+            "title": "Abs Degree",
+            "description": "Absolute degree in the zodiac"
+          },
+          "minutes": {
+            "type": "integer",
+            "exclusiveMaximum": 60.0,
+            "minimum": 0.0,
+            "title": "Minutes",
+            "description": "Minutes portion of the position"
+          },
+          "retrograde": {
+            "type": "boolean",
+            "title": "Retrograde",
+            "description": "True if retrograde"
+          },
+          "house": {
+            "type": "integer",
+            "maximum": 12.0,
+            "minimum": 1.0,
+            "title": "House",
+            "description": "House placement (1-12)"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name",
+          "sign",
+          "sign_id",
+          "degree",
+          "abs_degree",
+          "minutes",
+          "retrograde",
+          "house"
+        ],
+        "title": "PointData",
+        "description": "Data strict for a celestial point"
+      },
+      "UserDataRequest": {
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 2,
+            "title": "Nombre",
+            "description": "Nombre completo del usuario"
+          },
+          "fecha_nacimiento": {
+            "type": "string",
+            "title": "Fecha Nacimiento",
+            "description": "Fecha de nacimiento en formato YYYY-MM-DD"
+          },
+          "hora_nacimiento": {
+            "type": "string",
+            "title": "Hora Nacimiento",
+            "description": "Hora de nacimiento en formato HH:MM"
+          },
+          "ciudad_nacimiento": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Ciudad Nacimiento",
+            "description": "Ciudad de nacimiento"
+          },
+          "pais_nacimiento": {
+            "type": "string",
+            "minLength": 2,
+            "title": "Pais Nacimiento",
+            "description": "Pa\u00eds de nacimiento"
+          }
+        },
+        "type": "object",
+        "required": [
+          "nombre",
+          "fecha_nacimiento",
+          "hora_nacimiento",
+          "ciudad_nacimiento",
+          "pais_nacimiento"
+        ],
+        "title": "UserDataRequest",
+        "description": "Datos de entrada para calcular carta natal"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

@@ -22,7 +22,9 @@ except ImportError as e:
     sys.exit(1)
 
 # Importar modelos y configuración
+# Importar modelos y configuración
 from models import UserDataRequest, CartaNatalResponse, HealthResponse, ErrorResponse
+from strict_models import CartaNatalResponseStrict
 from config import settings
 
 # Importar calculadora de análisis cruzados
@@ -171,7 +173,7 @@ async def buscar_ubicaciones(request: Request):
             detail=f"Error buscando ubicación: {str(e)}"
         )
 
-@app.post("/carta-natal/tropical", response_model=CartaNatalResponse)
+@app.post("/carta-natal/tropical", response_model=CartaNatalResponseStrict)
 async def calcular_carta_tropical(request: UserDataRequest):
     """Calcular carta natal trópica"""
     logger.info(f"Calculando carta tropical para: {request.nombre}")
@@ -189,7 +191,7 @@ async def calcular_carta_tropical(request: UserDataRequest):
         resultado_reducido = generar_json_reducido(resultado)
         logger.debug("Formato reducido generado")
         
-        return CartaNatalResponse(
+        return CartaNatalResponseStrict(
             success=True,
             data=resultado,
             data_reducido=resultado_reducido
@@ -203,7 +205,7 @@ async def calcular_carta_tropical(request: UserDataRequest):
             detail=f"Error calculando carta natal: {str(e)}"
         )
 
-@app.post("/carta-natal/draconica", response_model=CartaNatalResponse)
+@app.post("/carta-natal/draconica", response_model=CartaNatalResponseStrict)
 async def calcular_carta_draconica(request: UserDataRequest):
     """Calcular carta natal dracónica"""
     logger.info(f"Calculando carta dracónica para: {request.nombre}")
@@ -219,7 +221,7 @@ async def calcular_carta_draconica(request: UserDataRequest):
         # Generar formato reducido
         resultado_reducido = generar_json_reducido(resultado)
         
-        return CartaNatalResponse(
+        return CartaNatalResponseStrict(
             success=True,
             data=resultado,
             data_reducido=resultado_reducido
