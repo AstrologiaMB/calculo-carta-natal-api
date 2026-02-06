@@ -140,7 +140,10 @@ async def root():
 async def health_check():
     """Ultra-simplified health check for Railway"""
     logger.info("❤️ HEALTH CHECK HIT - Responding...")
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "commit_sha": os.getenv("COMMIT_SHA")
+    }
 
 @app.post("/geocode/search")
 async def buscar_ubicaciones(request: Request):
