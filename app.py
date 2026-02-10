@@ -173,7 +173,7 @@ async def buscar_ubicaciones(request: Request):
             detail=f"Error buscando ubicación: {str(e)}"
         )
 
-@app.post("/carta-natal/tropical", response_model=CartaNatalResponseStrict)
+@app.post("/carta-natal/tropical", response_model=CartaNatalResponse)
 async def calcular_carta_tropical(request: UserDataRequest):
     """Calcular carta natal trópica"""
     logger.info(f"Calculando carta tropical para: {request.nombre}")
@@ -191,7 +191,7 @@ async def calcular_carta_tropical(request: UserDataRequest):
         resultado_reducido = generar_json_reducido(resultado)
         logger.debug("Formato reducido generado")
         
-        return CartaNatalResponseStrict(
+        return CartaNatalResponse(
             success=True,
             data=resultado,
             data_reducido=resultado_reducido
@@ -205,7 +205,7 @@ async def calcular_carta_tropical(request: UserDataRequest):
             detail=f"Error calculando carta natal: {str(e)}"
         )
 
-@app.post("/carta-natal/draconica", response_model=CartaNatalResponseStrict)
+@app.post("/carta-natal/draconica", response_model=CartaNatalResponse)
 async def calcular_carta_draconica(request: UserDataRequest):
     """Calcular carta natal dracónica"""
     logger.info(f"Calculando carta dracónica para: {request.nombre}")
@@ -221,7 +221,7 @@ async def calcular_carta_draconica(request: UserDataRequest):
         # Generar formato reducido
         resultado_reducido = generar_json_reducido(resultado)
         
-        return CartaNatalResponseStrict(
+        return CartaNatalResponse(
             success=True,
             data=resultado,
             data_reducido=resultado_reducido
