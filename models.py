@@ -11,8 +11,15 @@ class UserDataRequest(BaseModel):
     nombre: str = Field(..., min_length=2, max_length=100, description="Nombre completo del usuario")
     fecha_nacimiento: str = Field(..., description="Fecha de nacimiento en formato YYYY-MM-DD")
     hora_nacimiento: str = Field(..., description="Hora de nacimiento en formato HH:MM")
-    ciudad_nacimiento: str = Field(..., min_length=2, description="Ciudad de nacimiento")
-    pais_nacimiento: str = Field(..., min_length=2, description="País de nacimiento")
+    
+    # Opcionales: solo para display/logging (no se usan para cálculo)
+    ciudad_nacimiento: Optional[str] = Field(None, min_length=2, description="Ciudad de nacimiento (opcional, para display)")
+    pais_nacimiento: Optional[str] = Field(None, min_length=2, description="País de nacimiento (opcional, para display)")
+    
+    # Coordenadas precalculadas desde el frontend (Google Maps) - REQUERIDAS
+    latitud: float = Field(..., ge=-90, le=90, description="Latitud de nacimiento (de Google Maps)")
+    longitud: float = Field(..., ge=-180, le=180, description="Longitud de nacimiento (de Google Maps)")
+    timezone: str = Field(..., min_length=1, description="Zona horaria (de Google Maps API)")
     
     @field_validator('fecha_nacimiento')
     @classmethod
