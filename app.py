@@ -295,12 +295,13 @@ async def calcular_carta_cruzada(request: UserDataRequest):
 async def preparar_datos_usuario(request: UserDataRequest) -> Dict[str, Any]:
     """
     Convierte UserDataRequest al formato esperado por main.py
+    Usa coordenadas directamente del frontend (Google Maps) - sin geocoding
     """
     try:
-        # Obtener coordenadas usando la función existente
-        logger.info(f"Obteniendo coordenadas para: {request.ciudad_nacimiento}, {request.pais_nacimiento}")
-        lat, lon, timezone = get_coordinates(request.ciudad_nacimiento, request.pais_nacimiento)
-        logger.info(f"Coordenadas obtenidas: {lat}, {lon}, {timezone}")
+        # Usar coordenadas precalculadas desde el frontend
+        lugar_str = f"{request.ciudad_nacimiento or 'Ubicación'}, {request.pais_nacimiento or 'Desconocido'}"
+        logger.info(f"Usando coordenadas del frontend para: {lugar_str}")
+        logger.info(f"Lat: {request.latitud}, Lon: {request.longitud}, TZ: {request.timezone}")
         
         # Preparar fecha/hora en formato ISO
         fecha_hora_iso = f"{request.fecha_nacimiento}T{request.hora_nacimiento}:00"
@@ -310,17 +311,17 @@ async def preparar_datos_usuario(request: UserDataRequest) -> Dict[str, Any]:
             "nombre": request.nombre,
             "hora_local": fecha_hora_iso,
             "fecha_hora_natal": fecha_hora_natal,
-            "lat": lat,
-            "lon": lon,
-            "zona_horaria": timezone,
-            "lugar": f"{request.ciudad_nacimiento}, {request.pais_nacimiento}"
+            "lat": request.latitud,
+            "lon": request.longitud,
+            "zona_horaria": request.timezone,
+            "lugar": lugar_str
         }
         
         return datos
         
     except Exception as e:
         logger.error(f"Error preparando datos de usuario: {e}")
-        raise ValueError(f"Error procesando ubicación: {str(e)}")
+        raise ValueError(f"Error procesando datos de nacimiento: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn
