@@ -93,7 +93,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
     )
     return JSONResponse(
         status_code=422,
-        content=error_response.model_dump()
+        content=error_response.model_dump(mode='json')
     )
 
 # Manejador de errores generales
@@ -107,7 +107,7 @@ async def general_exception_handler(request: Request, exc: Exception):
     )
     return JSONResponse(
         status_code=500,
-        content=error_response.model_dump()
+        content=error_response.model_dump(mode='json')
     )
 
 @app.on_event("startup")
